@@ -1,0 +1,17 @@
+<div class="main" cdkDropListGroup>
+  <div
+    class="list"
+    *ngFor="let list of droppableLists;index as i"
+    cdkDropList
+    [cdkDropListData]="droppableLists[i].elements"
+    (cdkDropListDropped)="drop($event)"
+  >
+    <div class="element" *ngFor="let element of list.elements;index as j" cdkDrag [cdkDragData]="element">
+      {{ element.content }}
+    </div>
+
+  </div>
+  <div class="add list" (click)="addList()">
+    <i class="fa fa-plus-circle"></i>
+  </div>
+</div>

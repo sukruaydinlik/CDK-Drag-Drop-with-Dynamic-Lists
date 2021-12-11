@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list {
+  width: 24vw;
+  height: 32vh;
+  background-color: #6661aa;
+  border-radius: 16px;
+  margin: 4px;
+  overflow: auto;
+}
+
+.add {
+  display: flex;
+  font-size: 8rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.element {
+  width: calc(100%-8px);
+  height: 10%;
+  background-color: #444071;
+  margin: 4px;
+  border-radius: 8px;
+  color: #898A92;
+}
